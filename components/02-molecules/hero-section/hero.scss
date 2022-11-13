@@ -1,0 +1,40 @@
+.hero {
+  width: 100%;
+  position: relative;
+  background: #008374;
+  padding: 60px 0 0 0;
+  .text_left {
+    h2 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    p {
+      font-weight: 400;
+      margin-bottom: 30px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &_content {
+      display: flex;
+      align-items: center;
+      .learn-more {
+        button {
+          color: #fff;
+          text-transform: capitalize;
+          font-family: 'Montserrat', sans-serif;
+        }
+      }
+      .watch_video {
+        margin-left: 25px;
+        a {
+          color: #fff;
+          &::before {
+            color: rgba(255, 255, 255, 0.5);
+          }
+        }
+      }
+    }
+  }
+}

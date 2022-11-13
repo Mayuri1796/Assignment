@@ -1,0 +1,58 @@
+{% set about_base_class = 'aboutsection' %}
+<div class="aboutus">
+    <div class="container">
+        <div class="text_heading">
+            {% include "@atoms/text/headings/head.twig" with {
+                heading_data: heading_content,
+            } %}
+            {% include "@atoms/text/text/01-paragraph.twig" with {
+                paragraph_content: 'Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop'
+            } %}
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="text_left_image">
+                    {% include "@atoms/text/headings/_heading.twig" with {
+                        heading_level: 3,
+                        heading: 'Voluptatem dignissimos provident quasi corporis',
+                    } %}
+                    {% include "@atoms/images/image/_image.twig" with {
+                       image_src: about_image_src,
+                       image_alt: about_image_alt,
+                    } %}
+                    {% include "@atoms/text/text/01-paragraph.twig" with {
+                        paragraph_content: 'Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.'
+                    } %}
+                    {% include "@atoms/text/text/01-paragraph.twig" with {
+                        paragraph_content: 'Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.'
+                    } %}
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="text_right_image">
+                    <div class="text_italic">
+                        {% include "@atoms/text/text/01-paragraph.twig" with {
+                            paragraph_content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+                        } %}
+                    </div>
+                    <ul {{ bem ('list')}}>
+                        {% for item in list_content %}
+                            <li>
+                                {% include "@atoms/links/link/link.twig" with {
+                                    link_content: item.link_content_data,
+                                } %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                    {% include "@atoms/text/text/01-paragraph.twig" with {
+                        paragraph_content: 'Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident'
+                    } %}
+                    {% include "@atoms/images/image/_image.twig" with {
+                       image_src: about_img_src,
+                       image_alt: about_img_alt,
+                    } %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

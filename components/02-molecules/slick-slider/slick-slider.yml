@@ -1,0 +1,24 @@
+slick_slider_items:
+  - slick_slider_src: './client-1.png'
+    slick_slider_alt: 'photo'
+
+  - slick_slider_src: './client-2.png'
+    slick_slider_alt: 'photo1'
+
+  - slick_slider_src: './client-3.png'
+    slick_slider_alt: 'photo2'
+
+  - slick_slider_src: './client-4.png'
+    slick_slider_alt: 'photo3'
+
+  - slick_slider_src: './client-5.png'
+    slick_slider_alt: 'photo4'
+
+  - slick_slider_src: './client-6.png'
+    slick_slider_alt: 'photo5'
+
+  - slick_slider_src: './client-7.png'
+    slick_slider_alt: 'photo6'
+
+  - slick_slider_src: './client-8.png'
+    slick_slider_alt: 'photo7'

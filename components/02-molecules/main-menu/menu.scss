@@ -1,0 +1,13 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo-section {
+    z-index: 999;
+    .logo_div {
+      h1 {
+        color: #fff;
+      }
+    }
+  }
+}

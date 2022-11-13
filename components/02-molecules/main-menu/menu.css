@@ -1,0 +1,11 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .logo-section {
+  z-index: 999;
+}
+.menu .logo-section .logo_div h1 {
+  color: #fff;
+}/*# sourceMappingURL=menu.css.map */

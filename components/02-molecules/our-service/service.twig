@@ -1,0 +1,9 @@
+<div class="icongrid">
+  {% for item in icon_items %}
+    {% include "@atoms/service-card/service-card.twig" with {
+      service_icon: item.our_service_icon,
+      heading_title: item.our_service_heading_title,
+      service_card_paragraph_content: item.our_service_para,
+    } %}
+  {% endfor %}
+</div>

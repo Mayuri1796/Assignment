@@ -1,0 +1,79 @@
+{% set washington_navbar_base_class = 'navbar-section' %}
+{% set navbar_menu_class = 'navbar_menu' %}
+<div class="navbar">
+    <a class="btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <nav class="navbar-menu-list"> 
+        <ul {{bem ('navbar_menu_class')}}>
+            <li {{ bem ('active')}}>
+                {% include "@atoms/links/link/link.twig" with {
+                    link_url: navbar_url,
+                    link_content: navbar_content,
+                } %}
+            </li>
+            <li>
+                {% include "@atoms/links/link/link.twig" with {
+                    link_url: navbar_url_one,
+                    link_content: navbar_content_one,
+                } %}
+            </li>
+            <li>
+                {% include "@atoms/links/link/link.twig" with {
+                    link_url: navbar_url_two,
+                    link_content: navbar_content_two,
+                } %}    
+            </li>
+            <li>
+                {% include "@atoms/links/link/link.twig" with {
+                    link_url: navbar_url_three,
+                    link_content: navbar_content_three,
+                } %}
+            </li>
+            <li {{ bem ('dropdown')}}>
+            <span>Drop Down </span>
+                <ul {{ bem ('dropdown-content')}}>
+                    <li>
+                        {% include "@atoms/links/link/link.twig" with {
+                            link_url: navbar_dropdown_url,
+                            link_content: navbar_dropdown_content,
+                        } %}
+                    </li>
+                    <li {{ bem ('deep-dropdown')}}>
+                        <span>Deep Drop Down</span>
+                        <ul {{ bem ('deep-dropdown-content')}}>
+                            {% for items in deep_dropdown %}
+                            <li>
+                                {% include "@atoms/links/link/link.twig" with {
+                                    link_url: items.deep_dropdown_url,
+                                    link_content: items.deep_dropdown_content,
+                                } %}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    <li>
+                        {% include "@atoms/links/link/link.twig" with {
+                            link_url: navbar_dropdown_two,
+                            link_content: navbar_dropdown_content_two,
+                        } %}
+                    </li>
+                    <li>
+                        {% include "@atoms/links/link/link.twig" with {
+                            link_url: navbar_dropdown_three,
+                            link_content: navbar_dropdown_content_three,
+                        } %}
+                    </li>
+                </ul>
+            </li>
+            <li>
+                {% include "@atoms/links/link/link.twig" with {
+                    link_url: navbar_url_five,
+                    link_content: navbar_content_five,
+                } %}
+            </li>
+        </ul>
+    </nav>
+</div>

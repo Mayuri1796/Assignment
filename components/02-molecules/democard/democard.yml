@@ -1,0 +1,9 @@
+icon_items:
+  - icon_data: 'fa fa-laptop'
+    card_name: 'Lorem Ipsum'
+  - icon_data: 'fa fa-diamond'
+    card_name: 'Sed ut perspiciatis'
+  - icon_data: 'fa fa-map'
+    card_name: 'Magni Dolores'
+  - icon_data: 'fa fa-globe'
+    card_name: 'Nemo Enim'

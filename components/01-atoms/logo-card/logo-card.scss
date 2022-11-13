@@ -1,0 +1,25 @@
+.slide__card--main {
+  .slide__main--card {
+    .slide__left {
+      position: relative;
+      //   img {
+      //     width: 565px;
+      //     height: 300px;
+      //   }
+      .bg-img {
+        position: absolute;
+        right: 10%;
+        top: 60%;
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+    .slide__right {
+      width: 479px;
+      height: 145px;
+      margin-left: 132px;
+    }
+  }
+}

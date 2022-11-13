@@ -1,0 +1,12 @@
+<div class="photos">
+    <div class="container">
+        <div class="recent-photos">
+            {% for item in slick_slider_items %}
+                {% include "@atoms/logo-card/logo-card.twig" with {
+                    slide_card_src: item.slick_slider_src,
+                    slide_card_alt: item.slick_slider_alt,
+                } %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

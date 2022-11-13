@@ -1,0 +1,11 @@
+{% set menu_base_class = 'main-menu' %}
+<div class="container">
+    <div {{ bem ('menu')}}>
+        <div class="logo-section">
+            {% include "@atoms/text/text/logo.twig" %}
+        </div>
+        <div class="navbar-section">
+            {% include "@molecules/navbar/navbar.twig" %}
+        </div>
+    </div>
+</div>

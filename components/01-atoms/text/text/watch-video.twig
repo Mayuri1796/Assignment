@@ -1,0 +1,6 @@
+{% set video_base_class = 'video' %}
+<div {{ bem ('watch_video')}}>
+    {% include "@atoms/links/link/link.twig" with {
+        link_content: 'Watch Video',
+    } %}
+</div>

@@ -1,0 +1,15 @@
+{% set serviceicon_base_class = 'service' %}
+<div {{ bem ('service_card')}}>
+    <div class="service_card_data">
+        <div class="icon">
+            <i {{ bem (service_icon)}}></i>
+        </div>
+        {% include "@atoms/text/headings/_heading.twig" with {
+            heading_level: 3,
+            heading: heading_title,
+        } %}
+        {% include "@atoms/text/text/01-paragraph.twig" with {
+            paragraph_content: service_card_paragraph_content
+        } %}
+    </div>
+</div>

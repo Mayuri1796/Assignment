@@ -1,0 +1,29 @@
+
+{% set base_class_client = 'clientsection' %}
+<div class="client">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="client_image">
+                    {% include "@atoms/images/image/_image.twig" with {
+                        image_src: client_image_src,
+                        image_alt: client_image_alt,
+                    } %}
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="client_text">
+                    {% for item in paragraph_items %}
+                        {% include "@atoms/text/text/01-paragraph.twig" with {
+                            paragraph_content: item.client_paragraph_content,
+                        } %}
+                        {% include "@atoms/text/headings/_heading.twig" with {
+                            heading_level: 2,
+                            heading: item.client_heading,
+                        } %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

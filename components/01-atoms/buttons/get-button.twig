@@ -1,0 +1,6 @@
+{% set heading_base_class = 'button_div' %}
+<div {{ bem ('learn-more')}}>
+    {% include "@atoms/buttons/button.twig" with {
+        button_content: button_data,
+    } %}
+</div>

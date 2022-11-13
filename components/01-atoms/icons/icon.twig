@@ -1,0 +1,10 @@
+{% set icon_base_class = 'icon' %}
+<div {{ bem ('grid_icon')}}>
+    <div class="grid_icon_data">
+        <i {{ bem (icon)}}></i>
+        {% include "@atoms/text/headings/_heading.twig" with {
+            heading_level: 4,
+            heading: card_title,
+        } %}
+    </div>
+</div>

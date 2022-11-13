@@ -1,0 +1,35 @@
+.hero {
+  width: 100%;
+  position: relative;
+  background: #008374;
+  padding: 60px 0 0 0;
+}
+.hero .text_left h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.hero .text_left p {
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.hero .text_left_content {
+  display: flex;
+  align-items: center;
+}
+.hero .text_left_content .learn-more button {
+  color: #fff;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+}
+.hero .text_left_content .watch_video {
+  margin-left: 25px;
+}
+.hero .text_left_content .watch_video a {
+  color: #fff;
+}
+.hero .text_left_content .watch_video a::before {
+  color: rgba(255, 255, 255, 0.5);
+}/*# sourceMappingURL=hero.css.map */

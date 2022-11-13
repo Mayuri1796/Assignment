@@ -1,0 +1,56 @@
+.aboutus .container .text_heading {
+  padding-bottom: 60px;
+  text-align: center;
+}
+.aboutus .container .text_heading p {
+  margin-bottom: 0;
+  color: #6f6f6f;
+}
+.aboutus .container .text_left_image h3 {
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #222222;
+}
+.aboutus .container .text_left_image img {
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+.aboutus .container .text_right_image .text_italic p {
+  font-style: italic;
+}
+.aboutus .container .text_right_image .list {
+  margin-bottom: 16px;
+}
+.aboutus .container .text_right_image .list li {
+  list-style-type: none;
+  margin-top: 10px;
+}
+.aboutus .container .text_right_image .list li:nth-child(1)::before {
+  content: "\f058";
+  font-family: fontawesome;
+  font-size: 20px;
+  color: #008374;
+  margin-right: 5px;
+}
+.aboutus .container .text_right_image .list li:nth-child(2)::before {
+  content: "\f058";
+  font-family: fontawesome;
+  font-size: 20px;
+  color: #008374;
+  margin-right: 5px;
+}
+.aboutus .container .text_right_image .list li:nth-child(3)::before {
+  content: "\f058";
+  font-family: fontawesome;
+  font-size: 20px;
+  color: #008374;
+  margin-right: 5px;
+}
+.aboutus .container .text_right_image .list li a {
+  text-decoration: none;
+}
+.aboutus .container .text_right_image img {
+  border-radius: 24px;
+}/*# sourceMappingURL=about.css.map */

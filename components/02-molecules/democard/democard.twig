@@ -1,0 +1,12 @@
+
+{% set features_base_class = 'grid' %}
+<div {{ bem ('card-grid')}}>
+   <div class="demoicon">
+     {% for item in icon_items %}
+        {% include "@atoms/icons/icon.twig" with {
+          icon: item.icon_data,
+          card_title: item.card_name,
+        } %}
+     {% endfor %}
+   </div>  
+</div>

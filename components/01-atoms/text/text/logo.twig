@@ -1,0 +1,7 @@
+{% set logo_base_class = 'logo' %}
+<div {{ bem ('logo_div')}}>
+    {% include "@atoms/text/headings/_heading.twig" with {
+        heading_level: 1,
+        heading: heading_data,
+    } %}
+</div>

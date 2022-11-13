@@ -1,0 +1,11 @@
+heading_content: 'About Us'
+para_data: 'Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop'
+about_image_src: '/about.jpeg'
+about_image_alt: 'Image'
+list_content:
+  - link_content_data: 'Ullamco laboris nisi ut aliquip ex ea commodo consequat'
+  - link_content_data: 'Duis aute irure dolor in reprehenderit in voluptate velit.'
+  - link_content_data: 'Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.'
+
+about_img_src: '/about-2.jpeg'
+about_img_alt: 'Image'

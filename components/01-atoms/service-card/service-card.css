@@ -1,0 +1,47 @@
+.service_card .service_card_data {
+  padding: 40px;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+.service_card .service_card_data .icon {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  margin-bottom: 50px;
+}
+.service_card .service_card_data .icon i {
+  color: #222222;
+  font-size: 56px;
+  transition: ease-in-out 0.3s;
+  z-index: 2;
+  position: relative;
+}
+.service_card .service_card_data .icon::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #eeeeee;
+  border-radius: 50px;
+  z-index: 1;
+  top: 10px;
+  right: -20px;
+  transition: 0.3s;
+}
+.service_card .service_card_data .icon h3 {
+  color: #222222;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  padding-bottom: 8px;
+  font-size: 22px;
+  position: relative;
+  display: inline-block;
+  border-bottom: 4px solid #eeeeee;
+  transition: 0.3s;
+}
+.service_card .service_card_data:hover .icon:before {
+  background: #00b6a1;
+}/*# sourceMappingURL=service-card.css.map */
